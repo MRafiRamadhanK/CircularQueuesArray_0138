@@ -56,7 +56,20 @@ public:
 		int FRONT_position = FRONT;
 		int REAR_position = REAR;
 
-		if()
+		if (FRONT == -1) {
+			cout << "queues is empty\n";
+			return;
+		}
+		cout << "\nElements in the queue are : \n";
+
+		if (FRONT_position <= max - 1) {
+			while (FRONT_position <= REAR_position) {
+				cout << queue_array[REAR_position] << "       ";
+				FRONT_position++;
+			}
+			cout << endl;
+		}
+
 	}
 
 };
